@@ -79,11 +79,12 @@ class AppFixtures extends Fixture
             }
             // On ajoute la salle au tableau $objectRooms
             $objectRooms[] = $room;
+            //persist
             // On persiste la salle
             $manager->persist($room);
         }
 
-        
+
 
 
         $manager->flush();
